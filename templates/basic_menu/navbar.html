@@ -1,0 +1,9 @@
+{% block content %}
+<p>Hallo {{ session['username'] }}</p>
+<nav>
+    <li><a href="{{ url_for('home') }}">Home</a></li>
+    <li><a href="{{ url_for('about') }}">about</a></li>
+    <li><a href="{{ url_for('contact') }}">Contact</a></li>
+    <li><a href="{{ url_for('logout') }}">logout</a></li>
+</nav>
+{% endblock %}
